@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "Proza Libre";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""),
+    url("../fonts/proza-libre/proza-libre-v9-latin-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/proza-libre/proza-libre-v9-latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Proza Libre";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local(""),
+    url("../fonts/proza-libre/proza-libre-v9-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/proza-libre/proza-libre-v9-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Proza Libre";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local(""),
+    url("../fonts/proza-libre/proza-libre-v9-latin-800.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/proza-libre/proza-libre-v9-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""),
+    url("../fonts/cormorant/cormorant-v18-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/cormorant/cormorant-v18-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local(""),
+    url("../fonts/cormorant/cormorant-v18-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/cormorant/cormorant-v18-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Permanent Marker";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""),
+    url("../fonts/permanent-marker/permanent-marker-v16-latin-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/permanent-marker/permanent-marker-v16-latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: $clr-primary-black-light;
+  text-transform: uppercase;
+  font-family: $ff-sans-serif;
+
+  @media (max-width: 75em) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 31.25em) {
+    font-size: 0.9rem;
+  }
+}
+
+.section-title {
+  font-size: 3.5rem;
+  color: $clr-primary-black-dark;
+  font-family: $ff-serif;
+
+  @media (max-width: 75em) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 31.25em) {
+    max-width: unset;
+    font-size: 2.2rem;
+  }
+}
+
+.section-subtitle.light,
+.section-title.light {
+  color: $clr-secondary-white;
+}
+
+/* **************************** */
+/* *        SECTION HERO       **/
+/* **************************** */
+
+.section-hero {
+  color: $clr-secondary-white;
+
+  &-title {
+    font-size: 6rem;
+    font-family: $ff-handwriting;
+
+    @media (max-width: 65.625em) {
+      font-size: 5rem;
+    }
+
+    @media (max-width: 32.1875em) {
+      font-size: 4rem;
+    }
+
+    @media (max-width: 24.625em) {
+      font-size: 3.1rem;
+    }
+  }
+
+  &-sub-title {
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @media (max-width: 65.625em) {
+      font-size: 1rem;
+    }
+  }
+
+  &-scroll {
+    text-transform: uppercase;
+  }
+}
+
+/* **************************** */
+/* *      SECTION SERVICES     **/
+/* **************************** */
+
+.section-services {
+  background-color: $clr-secondary-white;
+
+  &__services-card-title {
+    font-weight: 600;
+    max-width: 150px;
+  }
+}
+
+/* **************************** */
+/* *     SECTION PORTFOLIO     **/
+/* **************************** */
+
+.section-portfolio {
+  background-color: $clr-secondary-white;
+
+  &__latest-works-subtitle {
+    font-size: 0.9rem;
+    color: $clr-primary-black-light;
+    text-transform: uppercase;
+    font-family: $ff-sans-serif;
+  }
+
+  &__latest-works-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* **************************** */
+/* *      SECTION ABOUT        **/
+/* **************************** */
+
+.section-about {
+  background-color: $clr-primary-black-dark;
+
+  &__about-content-text {
+    color: $clr-secondary-white;
+
+    &-container {
+      max-width: 600px;
+    }
+  }
+}
+
+/* **************************** */
+/* *      SECTION CONTACT      **/
+/* **************************** */
+
+.section-contact {
+  background-color: $clr-primary-black-dark;
+  color: $clr-secondary-white;
+
+  &__title {
+    color: $clr-secondary-white;
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+}

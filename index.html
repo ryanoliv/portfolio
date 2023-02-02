@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="canonical" href="https://www.ryanoliver.dev" />
+
+    <meta
+      name="description"
+      content="Web design and web development based in Cape Town, South Africa. Custom built websites with a focus on style and performance."
+    />
+
+    <!--Social Media Display-->
+
+    <meta
+      property="og:title"
+      content="Ryan Oliver • Web Design and Web Development"
+    />
+    <meta
+      property="og:description"
+      content="Web design and web development based in Cape Town, South Africa. Custom built websites with a focus on style and performance."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.ryanoliver.dev" />
+    <meta
+      property="og:image"
+      content="https://www.ryanoliver.dev/media/latest-works/about-img.jpg"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@ryan____oliver" />
+    <meta
+      name="twitter:title"
+      content="Ryan Oliver • Web Design and Web Development"
+    />
+    <meta
+      name="twitter:description"
+      content="Web design and web development based in Cape Town, South Africa. Custom built websites with a focus on style and performance."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.ryanoliver.dev/media/latest-works/about-img.jpg"
+    />
+
+    <!--Favicons-->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/media/favicons/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/media/favicons/favicon-16.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="80x80"
+      href="/media/favicons/favicon-80.png"
+    />
+
+    <!--Preload-->
+    <link rel="preload" as="script" href="https://unpkg.com/split-type" />
+    <link
+      rel="preload"
+      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      as="script"
+      href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    />
+    <link
+      rel="preload"
+      integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      as="script"
+      href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/proza-libre/proza-libre-v9-latin-regular.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/proza-libre/proza-libre-v9-latin-600.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/permanent-marker/permanent-marker-v16-latin-regular.woff2"
+      crossorigin
+    />
+
+    <!--CSS-->
+
+    <link rel="stylesheet" href="/css/main.min.css" />
+
+    <title>Ryan Oliver • Web Design and Web Development</title>
+    <meta
+      name="google-site-verification"
+      content="gaXrxVrD03ml0X_ODo9RFFymGHj-9ICBW7rOkA5Cs_Y"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Ryan Oliver",
+        "image": "",
+        "@id": "",
+        "url": "https://www.ryanoliver.dev",
+        "sameAs": [
+          "https://www.linkedin.com/in/ryan-oliver-design-develop/",
+          "https://www.instagram.com/ryan__oliver/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "",
+          "addressLocality": "Cape Town",
+          "postalCode": "7806",
+          "addressCountry": "ZA"
+        }
+      }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-79GQYLC2RS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-79GQYLC2RS");
+    </script>
+  </head>
+  <body onload="move()">
+    <div id="preloader">
+      <div id="percent">0%</div>
+      <div id="bar">
+        <div id="bar-inner"></div>
+      </div>
+    </div>
+    <div class="cursor"></div>
+    <section class="section-hero">
+      <nav class="navigation">
+        <div class="container">
+          <input
+            type="checkbox"
+            aria-label="navigation checkbox"
+            class="navigation__checkbox"
+          />
+          <div class="hamburger-lines">
+            <span class="hamburger-line"></span>
+          </div>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="#services" class="navigation-link">Services</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#portfolio" class="navigation-link">Portfolio</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#about" class="navigation-link">About</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#contact" class="navigation-link">Contact</a>
+            </li>
+          </ul>
+          <ul class="navigation-list-mobile">
+            <li class="navigation-item-mobile">
+              <a href="#services" class="navigation-link-mobile">Services</a>
+            </li>
+            <li class="navigation-item-mobile">
+              <a href="#portfolio" class="navigation-link-mobile">Portfolio</a>
+            </li>
+            <li class="navigation-item-mobile">
+              <a href="#about" class="navigation-link-mobile">About</a>
+            </li>
+            <li class="navigation-item-mobile">
+              <a href="#contact" class="navigation-link-mobile">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="section-hero-content">
+          <h1 class="section-hero-title">Ryan Oliver</h1>
+          <div class="section-hero-sub-title-container">
+            <h2 class="section-hero-sub-title">Designer</h2>
+            <h2 class="section-hero-sub-title">Developer</h2>
+          </div>
+          <a
+            class="btn magnetic btn-light flex margin-auto landing-btn"
+            href="#contact"
+          >
+            Let's Talk
+            <img
+              src="/media/svgs/arrow.svg"
+              alt="Arrow Icon"
+              class="arrow__icon"
+              width="28"
+              height="17"
+            />
+          </a>
+        </div>
+        <a href="#services" class="link">
+          <h3 class="section-hero-scroll">
+            Discover<img
+              src="/media/svgs/down-arrow.svg"
+              alt="Arrow Icon"
+              class="arrow__icon"
+              width="17"
+              height="19"
+            />
+          </h3>
+        </a>
+        <svg class="hero-svg">
+          <filter id="noiseFilter">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="6.29"
+              numOctaves="6"
+              stitchTiles="stitch"
+            />
+          </filter>
+        </svg>
+      </div>
+    </section>
+
+    <section class="section section-services" id="services">
+      <div class="container">
+        <div class="section__content">
+          <div class="section-subtitle-container">
+            <h2 class="section-subtitle">Services</h2>
+          </div>
+          <div class="section-title-container">
+            <h2 class="section-title" id="text-animation">
+              Building designs with
+              <br />
+              better experience
+            </h2>
+          </div>
+          <div class="section-services__services-grid">
+            <div class="section-services__services-card">
+              <img
+                src="/media/icons/design.webp"
+                alt="UI Design Icon"
+                class="section-services__services-card-icon magnetic2"
+                width="54"
+                height="54"
+              />
+              <h3 class="section-services__services-card-title">
+                User Interface Design
+              </h3>
+              <p class="section-services__services-card-text">
+                Creating interfaces with a focus on look, style, and
+                interactivity. Maximizing usability and the user
+                <span class="bolder">experience</span>.
+              </p>
+            </div>
+            <div class="section-services__services-card">
+              <img
+                src="/media/icons/development.webp"
+                alt="Web Development Icon"
+                class="section-services__services-card-icon magnetic3"
+                width="54"
+                height="54"
+              />
+              <h3 class="section-services__services-card-title">
+                Web Development
+              </h3>
+              <p class="section-services__services-card-text">
+                Taking the vision and design concept and implementing it through
+
+                <span class="bolder">code</span>.
+              </p>
+            </div>
+            <div class="section-services__services-card">
+              <img
+                src="/media/icons/seo.webp"
+                alt="SEO Icon"
+                class="section-services__services-card-icon magnetic4"
+                width="54"
+                height="54"
+              />
+              <h3 class="section-services__services-card-title">
+                Search Engine Optimisation
+              </h3>
+              <p class="section-services__services-card-text">
+                Improving your website so that search engines are more likely to
+                show your website in users’ search
+                <span class="bolder">results</span>.
+              </p>
+            </div>
+            <div class="section-services__services-card">
+              <img
+                src="/media/icons/page-speed.webp"
+                alt="Performance Optimisation Icon"
+                class="section-services__services-card-icon magnetic5"
+                width="54"
+                height="54"
+              />
+              <h3 class="section-services__services-card-title">
+                Performance Optimisation
+              </h3>
+              <p class="section-services__services-card-text">
+                Optimising all assets involved in the website for drastic
+                increase in
+                <span class="bolder">performance</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-portfolio" id="portfolio">
+      <div class="container">
+        <div class="section__content">
+          <div class="section-subtitle-container">
+            <h2 class="section-subtitle">Portfolio</h2>
+          </div>
+          <div class="section-title-container">
+            <h2 class="section-title">Latest Works</h2>
+          </div>
+          <div class="section-portfolio__latest-works-container">
+            <div class="section-portfolio__latest-works-text-container">
+              <h3 class="section-portfolio__latest-works-subtitle">Design</h3>
+              <h4 class="section-portfolio__latest-works-title">
+                Arc Architecture
+              </h4>
+              <p class="section-portfolio__latest-works-text">
+                Arc Architecture aims to display a reputable architecture
+                company’s services and previous work for clients in a
+                minimalistic way.
+                <br />
+                <br />
+                Clients visiting the website should feel that the entire
+                building process is taken care of for them, from architecture to
+                interior design.
+                <br />
+                <br />
+                Arc Architecture’s previous work is displayed using a modern
+                horizontal media scroller, making it easy to view projects
+                without taking up too much web page real estate.
+              </p>
+              <!-- <h3 class="section-portfolio__latest-works-subtitle">
+                Tech Stack
+              </h3> -->
+              <div class="section-portfolio__tech-stack-container">
+                <h3 class="section-portfolio__latest-works-subtitle">
+                  Tech Stack
+                </h3>
+                <div class="section-portfolio__tech-stack">
+                  <img
+                    src="/media/icons/photoshop.png"
+                    alt="Photoshop Icon"
+                    class="tech-stack-icon"
+                    width="32"
+                    height="32"
+                  />
+                  <img
+                    src="/media/icons/figma.png"
+                    alt="Figma Icon"
+                    class="tech-stack-icon"
+                    width="32"
+                    height="32"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="section-portfolio__latest-works-media-container">
+              <div class="section-portfolio__latest-works-media">
+                <img
+                  src="/media/latest-works/ARC-2.webp"
+                  alt="Arc Architecture Image"
+                  class="latest-works-img"
+                  width="560"
+                  height="950"
+                  decoding="async"
+                  loading="lazy"
+                  data-original="arc-small.webp"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="section-portfolio__latest-works-container">
+            <div class="section-portfolio__latest-works-text-container">
+              <h3 class="section-portfolio__latest-works-subtitle">
+                Design and Development
+              </h3>
+
+              <h4 class="section-portfolio__latest-works-title">
+                Jek.Kah Healing
+              </h4>
+              <p class="section-portfolio__latest-works-text">
+                For
+                <a
+                  href="https://www.jekkahhealing.com/"
+                  class="link"
+                  target="_blank"
+                  rel="nofollow referrer"
+                  >Jekkah Healing</a
+                >, I used a mobile-first approach in development which really
+                cleaned up the code and made it more manageable as this was a
+                big project.
+                <br />
+                <br />
+                The focus for this website was to be a platform to communicate
+                all the clients many services and for users to make bookings
+                easily.
+                <br />
+                <br />
+                I focused a lot more on the UI for this project and successfully
+                reused code wherever I was able to.
+              </p>
+              <div class="section-portfolio__tech-stack-container">
+                <h3 class="section-portfolio__latest-works-subtitle">
+                  Tech Stack
+                </h3>
+                <div class="section-portfolio__tech-stack">
+                  <img
+                    src="/media/icons/photoshop.png"
+                    alt="Photoshop Icon"
+                    class="tech-stack-icon"
+                    width="32"
+                    height="32"
+                  />
+                  <img
+                    src="/media/icons/figma.png"
+                    alt="Figma Icon"
+                    class="tech-stack-icon"
+                    width="32"
+                    height="32"
+                  />
+                  <img
+                    src="/media/icons/html-5.png"
+                    alt="HTML Icon"
+                    class="tech-stack-icon"
+                    width="32"
+                    height="32"
+                  />
+                  <img
+                    src="/media/icons/css-3.png"
+                    alt="CSS Icon"
+                    class="tech-stack-icon"
+                    width="32"
+                    height="32"
+                  />
+                  <img
+                    src="/media/icons/js.png"
+                    alt="JavaScript Icon"
+                    class="tech-stack-icon"
+                    width="32"
+                    height="32"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="section-portfolio__latest-works-media-container">
+              <div class="section-portfolio__latest-works-media">
+                <video preload controls autoplay loop class="latest-works-vid">
+                  <source
+                    src="media/latest-works/jekkah-new.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+          <div class="section-portfolio__latest-works-container">
+            <div class="section-portfolio__latest-works-text-container">
+              <h3 class="section-portfolio__latest-works-subtitle">
+                Performance
+              </h3>
+              <h4 class="section-portfolio__latest-works-title">Ryan Oliver</h4>
+              <p class="section-portfolio__latest-works-text">
+                Website performance plays a big role in how you rank on Google.
+                <br />
+                <br />
+                According to
+                <a
+                  href="https://www.websitebuilderexpert.com/building-websites/website-load-time-statistics/#:~:text=So%2C%20how%20fast%20should%20a,seconds%20before%20abandoning%20a%20site."
+                  class="link"
+                  target="_blank"
+                  rel="nofollow"
+                  >WebsiteBuilderExpert</a
+                >, “40% of consumers will wait no more than three seconds before
+                abandoning a site.”
+                <br />
+                <br />
+                Ensuring that all media and assets involved are optimised is one
+                of my focus points when building websites.
+                <br />
+                <br />
+                <!-- Test my website speed
+                <a
+                  href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.ryanoliver.dev%2F&form_factor=desktop"
+                  class="link"
+                  target="_blank"
+                  rel="nofollow referrer"
+                  >here</a
+                >. -->
+              </p>
+              <div class="section-portfolio__tech-stack-container">
+                <h3 class="section-portfolio__latest-works-subtitle">
+                  Tech Stack
+                </h3>
+                <div class="section-portfolio__tech-stack">
+                  <img
+                    src="/media/icons/photoshop.png"
+                    alt="Photoshop Icon"
+                    class="tech-stack-icon"
+                    width="32"
+                    height="32"
+                  />
+                  <img
+                    src="/media/icons/figma.png"
+                    alt="Figma Icon"
+                    class="tech-stack-icon"
+                    width="32"
+                    height="32"
+                  />
+                  <img
+                    src="/media/icons/html-5.png"
+                    alt="HTML Icon"
+                    class="tech-stack-icon"
+                    width="32"
+                    height="32"
+                  />
+                  <img
+                    src="/media/icons/sass.png"
+                    alt="Sass Icon"
+                    class="tech-stack-icon"
+                    width="32"
+                    height="32"
+                  />
+                  <img
+                    src="/media/icons/js.png"
+                    alt="JavaScript Icon"
+                    class="tech-stack-icon"
+                    width="32"
+                    height="32"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="section-portfolio__latest-works-media-container">
+              <div class="section-portfolio__latest-works-media">
+                <img
+                  src="/media/latest-works/performance.png"
+                  alt="Ryan Oliver Website Performance Image"
+                  class="latest-works-img"
+                  width="560"
+                  height="950"
+                  decoding="async"
+                  loading="lazy"
+                  data-original="performance.png"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="section-portfolio__latest-works-container">
+            <div class="section-portfolio__latest-works-text-container">
+              <h3 class="section-portfolio__latest-works-subtitle">Design</h3>
+              <h4 class="section-portfolio__latest-works-title">smrt App</h4>
+              <p class="section-portfolio__latest-works-text">
+                The smrt app is a modern approach of a smart device handler.
+                <br />
+                <br />
+                This app’s functionality makes it easy for the user to sort and
+                apply changes to their smart home devices, while also being
+                pleasing to the eye.
+                <br />
+                <br />
+                A big focus point for this project was to make device
+                customisation as accessible as possible.
+              </p>
+              <div class="section-portfolio__tech-stack-container">
+                <h3 class="section-portfolio__latest-works-subtitle">
+                  Tech Stack
+                </h3>
+                <div class="section-portfolio__tech-stack">
+                  <img
+                    src="/media/icons/photoshop.png"
+                    alt="Photoshop Icon"
+                    class="tech-stack-icon"
+                    width="32"
+                    height="32"
+                  />
+                  <img
+                    src="/media/icons/figma.png"
+                    alt="Figma Icon"
+                    class="tech-stack-icon"
+                    width="32"
+                    height="32"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="section-portfolio__latest-works-media-container">
+              <div class="section-portfolio__latest-works-media">
+                <img
+                  src="/media/latest-works/smrt-app.webp"
+                  alt="smrt App Image Image"
+                  class="latest-works-img"
+                  width="560"
+                  height="950"
+                  decoding="async"
+                  loading="lazy"
+                  data-original="smrt-full.webp"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal">
+        <img src="data:," alt="Latest works image" class="full-img" />
+      </div>
+    </section>
+    <section class="section section-about" id="about">
+      <div class="container">
+        <div class="section__content">
+          <div class="section-subtitle-container">
+            <h2 class="section-subtitle light">About</h2>
+          </div>
+          <div class="section-title-container">
+            <h2 class="section-title light">Hi, I’m Ryan</h2>
+          </div>
+          <div class="section-about__about-content">
+            <div class="section-about__about-content-img-container">
+              <img
+                src="/media/latest-works/about-img.jpg"
+                alt="Ryan Oliver Portrait"
+                class="section-about__about-content-img"
+                width="350"
+                height="350"
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+            <div class="section-about__about-content-text-container">
+              <p class="section-about__about-content-text">
+                I’m a designer and developer currently living in Cape Town,
+                South Africa.
+                <br />
+                <br />
+                I got into web design because of my keen eye for detail and
+                interest in all things visual design. After taking a big liking
+                to styling the web/CSS, I moved my attention to UI design and
+                how design and code work together. During my time working as a
+                freelancer, I’ve learned how to build designs and translate
+                those designs into robust websites.
+                <br />
+                <br />
+                If you would like to chat about working on a project together or
+                have any questions then feel free to drop me a message.
+              </p>
+              <a class="btn btn-light flex margin-auto" href="#contact">
+                Let's Talk
+                <img
+                  src="/media/svgs/arrow.svg"
+                  alt="Arrow Icon"
+                  class="arrow__icon"
+                  width="28"
+                  height="17"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="section__content">
+          <div class="section-subtitle-container">
+            <h2 class="section-subtitle light">Contact</h2>
+          </div>
+          <div class="section-title-container">
+            <h2 class="section-title light">Let's Talk</h2>
+          </div>
+        </div>
+        <div class="section-contact__contact-info">
+          <div class="section-contact__contact-info-left">
+            <h3 class="section-contact__title">
+              Want to work on something together? <br />
+              I would love to help.
+            </h3>
+            <p class="section-contact__email" id="copyText">
+              ryanolivercpt@gmail.com
+            </p>
+            <button
+              class="btn btn-light flex margin-b-medium tooltip"
+              onclick="copyContent()"
+              data-text="Copy email to clipboard"
+            >
+              <img
+                src="/media/svgs/arrow.svg"
+                alt="Arrow Icon"
+                class="arrow__icon"
+                width="28"
+                height="17"
+              />
+            </button>
+            <div class="socials">
+              <a
+                href="https://www.linkedin.com/in/ryan-oliver-design-develop/"
+                class="socials-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/media/svgs/linkedin.svg"
+                  alt="LinkedIn Icon"
+                  class="arrow__icon"
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <a
+                href="mailto:ryanolivercpt@gmail.com"
+                class="socials-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/media/svgs/email.svg"
+                  alt="Email Icon"
+                  class="arrow__icon"
+                  width="22"
+                  height="22"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <button class="back-to-top hidden" aria-label="Back to Top Button">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="back-to-top-icon"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M7 11l5-5m0 0l5 5m-5-5v12"
+        />
+      </svg>
+    </button>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <p class="footer-copyright" id="footer-year"></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/split-type"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+      integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const tll = gsap.timeline({
+        paused: "true",
+      });
+      tll.to("#percent, #bar", {
+        duration: 0.4,
+        opacity: 0,
+        zIndex: -1,
+      });
+      tll.to("#preloader", {
+        duration: 0.8,
+        width: "0%",
+      });
+      let width = 1;
+      let bar = document.getElementById("bar-inner");
+      let id;
+
+      function move() {
+        id = setInterval(frame, 10);
+      }
+
+      function frame() {
+        if (width >= 100) {
+          clearInterval(id);
+          tll.play();
+        } else {
+          width++;
+          bar.style.width = width + "%";
+          document.getElementById("percent").innerHTML = width + "%";
+        }
+      }
+    </script>
+    <script>
+      TweenMax.from(
+        ".section-hero-title",
+        2.5,
+        {
+          delay: 0.5,
+          y: 100,
+          opacity: 0,
+          ease: Expo.easeInOut,
+        },
+        0.4
+      );
+
+      TweenMax.staggerFrom(
+        ".section-hero-sub-title",
+        3,
+        {
+          delay: 1.5,
+          y: 100,
+          opacity: 0,
+          ease: Expo.easeInOut,
+        },
+        0.4
+      );
+
+      TweenMax.staggerFrom(
+        ".navigation-item",
+        4,
+        {
+          delay: 2,
+          y: -60,
+          opacity: 0,
+          ease: Expo.easeInOut,
+        },
+        0.4
+      );
+
+      TweenMax.staggerFrom(
+        ".section-hero-scroll",
+        4,
+        {
+          delay: 3.4,
+          y: 60,
+          opacity: 0,
+          ease: Expo.easeInOut,
+        },
+        0.4
+      );
+    </script>
+    <script>
+      const tl = gsap.timeline();
+      tl.to(".landing-btn", {
+        delay: 6,
+        opacity: 1,
+        duration: 1,
+      });
+    </script>
+
+    <script>
+      let mouseCursor = document.querySelector(".cursor");
+      let navLinks = document.querySelectorAll(".navigation-link");
+
+      handleMouseMove = (event) => {
+        const y = event.pageY;
+        const x = event.pageX;
+        // const mouseCursor = document.querySelector(".cursor");
+        const scrollLeft =
+          window.pageXOffset !== undefined
+            ? window.pageXOffset
+            : (
+                document.documentElement ||
+                document.body.parentNode ||
+                document.body
+              ).scrollLeft;
+        const scrollTop =
+          window.pageYOffset !== undefined
+            ? window.pageYOffset
+            : (
+                document.documentElement ||
+                document.body.parentNode ||
+                document.body
+              ).scrollTop;
+        mouseCursor.style.left = x - scrollLeft + "px";
+        mouseCursor.style.top = y - scrollTop + "px";
+      };
+
+      document.addEventListener("mousemove", handleMouseMove, false);
+
+      navLinks.forEach((link) => {
+        link.addEventListener("mouseover", () => {
+          mouseCursor.classList.add("link-grow");
+          link.classList.add("hovered-link");
+        });
+        link.addEventListener("mouseleave", () => {
+          mouseCursor.classList.remove("link-grow");
+          link.classList.remove("hovered-link");
+        });
+      });
+    </script>
+
+    <script>
+      const lerp = (current, target, factor) =>
+        current * (1 - factor) + target * factor;
+
+      let mousePosition = { x: 0, y: 0 };
+      window.addEventListener("mousemove", (e) => {
+        mousePosition.x = e.pageX;
+        mousePosition.y = e.pageY;
+      });
+
+      const calculateDistance = (x1, y1, x2, y2) => {
+        return Math.hypot(x1 - x2, y1 - y2);
+      };
+
+      // ------------------------------------------------------------------------
+      class MagneticObject {
+        constructor(domElement) {
+          this.domElement = domElement;
+          this.boundingClientRect = this.domElement.getBoundingClientRect();
+          this.triggerArea = 200;
+          this.interpolationFactor = 0.2;
+
+          this.lerpingData = {
+            x: { current: 0, target: 0 },
+            y: { current: 0, target: 0 },
+          };
+
+          this.render();
+          this.resize();
+        }
+
+        resize() {
+          window.addEventListener("resize", () => {
+            this.boundingClientRect = this.domElement.getBoundingClientRect();
+          });
+        }
+
+        render() {
+          const distanceFromMouseToCenter = calculateDistance(
+            mousePosition.x,
+            mousePosition.y,
+            this.boundingClientRect.left + this.boundingClientRect.width / 2,
+            this.boundingClientRect.top + this.boundingClientRect.height / 2
+          );
+
+          let targetHolder = { x: 0, y: 0 };
+
+          if (distanceFromMouseToCenter < this.triggerArea) {
+            //   this.domElement.classList.add("focus");
+            targetHolder.x =
+              (mousePosition.x -
+                (this.boundingClientRect.left +
+                  this.boundingClientRect.width / 2)) *
+              0.2;
+            targetHolder.y =
+              (mousePosition.y -
+                (this.boundingClientRect.top +
+                  this.boundingClientRect.height / 2)) *
+              0.2;
+          } else {
+            //   this.domElement.classList.remove("focus");
+          }
+          this.lerpingData["x"].target = targetHolder.x;
+          this.lerpingData["y"].target = targetHolder.y;
+
+          for (const item in this.lerpingData) {
+            this.lerpingData[item].current = lerp(
+              this.lerpingData[item].current,
+              this.lerpingData[item].target,
+              this.interpolationFactor
+            );
+          }
+
+          this.domElement.style.transform = `translate(${this.lerpingData["x"].current}px, ${this.lerpingData["y"].current}px)`;
+
+          window.requestAnimationFrame(() => this.render());
+        }
+      }
+
+      const button = document.querySelector(".magnetic");
+      const button2 = document.querySelector(".magnetic2");
+      const button3 = document.querySelector(".magnetic3");
+      const button4 = document.querySelector(".magnetic4");
+      const button5 = document.querySelector(".magnetic5");
+      new MagneticObject(button);
+      new MagneticObject(button2);
+      new MagneticObject(button3);
+      new MagneticObject(button4);
+      new MagneticObject(button5);
+    </script>
+
+    <script>
+      const textAnimate = new SplitType("#text-animation");
+
+      gsap.to(".char", {
+        scrollTrigger: {
+          trigger: ".section",
+          start: "top center",
+        },
+        y: 0,
+        stagger: 0.04,
+        delay: 0.1,
+        duration: 0.4,
+      });
+    </script>
+
+    <script>
+      const modal = document.querySelector(".modal");
+      const previews = document.querySelectorAll(".latest-works-img");
+      const original = document.querySelector(".full-img");
+      const body = document.querySelector("body");
+
+      previews.forEach((preview) => {
+        preview.addEventListener("click", () => {
+          modal.classList.add("open");
+          original.classList.add("open");
+          body.classList.add("open");
+          const originalSrc = preview.getAttribute("data-original");
+          original.src = `media/latest-works/${originalSrc}`;
+        });
+      });
+
+      modal.addEventListener("click", (e) => {
+        if (e.target.classList.contains("modal")) {
+          modal.classList.remove("open");
+          body.classList.remove("open");
+          original.classList.remove("open");
+        }
+      });
+    </script>
+    <script>
+      const showOnPx = 5500;
+      const backToTopButton = document.querySelector(".back-to-top");
+
+      const scrollContainer = () => {
+        return document.documentElement || document.body;
+      };
+
+      document.addEventListener("scroll", () => {
+        if (scrollContainer().scrollTop > showOnPx) {
+          backToTopButton.classList.remove("hidden");
+        } else {
+          backToTopButton.classList.add("hidden");
+        }
+      });
+
+      const goToTop = () => {
+        document.body.scrollIntoView({
+          behavior: "smooth",
+        });
+      };
+
+      backToTopButton.addEventListener("click", goToTop);
+    </script>
+    <script>
+      let text = document.getElementById("copyText").innerHTML;
+      const copyContent = async () => {
+        try {
+          await navigator.clipboard.writeText(text);
+          alert("Email address copied to clipboard :D");
+        } catch (err) {
+          alert("Failed to copy: ", err);
+        }
+      };
+    </script>
+    <script>
+      const year = new Date().getFullYear();
+
+      const date = `&copy; Handcoded by Ryan Oliver ${year}. All Rights Reserved.`;
+
+      document.getElementById("footer-year").innerHTML = date;
+    </script>
+  </body>
+</html>

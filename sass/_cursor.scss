@@ -1,0 +1,27 @@
+.cursor {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid $clr-secondary-white-light;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.4s ease;
+  transition-property: background-color, transform;
+  transform-origin: 100% 100%;
+  z-index: 1;
+  backdrop-filter: invert(100%);
+
+  @media (max-width: 64em) {
+    display: none;
+  }
+}
+
+.link-grow {
+  transform: scale(2.3);
+  background-color: $clr-secondary-white;
+}
+
+.hovered-link {
+  color: $clr-primary-black-dark-2 !important;
+}

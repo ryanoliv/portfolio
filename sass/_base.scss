@@ -1,0 +1,90 @@
+// COLOURS //
+$clr-primary-black-dark: #262322;
+$clr-primary-black-dark-2: #171615;
+$clr-primary-black-light: #474240;
+// $clr-secondary-white: #f2e5d7;
+$clr-secondary-white: linen;
+$clr-secondary-white-light: #fdfbf5;
+
+// FONTS //
+$ff-sans-serif: "Proza Libre", sans-serif;
+$ff-serif: "Cormorant", serif;
+$ff-handwriting: "Permanent Marker", sans-serif;
+
+// MARGINS //
+$mb-small: 1.5rem;
+$mb-medium: 3rem;
+$mb-big: 4.5rem;
+$mb-huge: 6rem;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  cursor: none;
+  scroll-behavior: smooth;
+
+  @media (max-width: 64em) {
+    cursor: default;
+    overflow-x: hidden;
+  }
+}
+
+body {
+  position: relative;
+  font-family: $ff-sans-serif;
+
+  @media (max-width: 64em) {
+    overflow-x: hidden;
+  }
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
